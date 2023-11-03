@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guys",
+  "info": {
+    "singularName": "guy",
+    "pluralName": "guys",
+    "displayName": "Guy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "profile_picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
