@@ -10,12 +10,27 @@ GET /guy : Retrieves all guys.
 - PUT /guy/{id} : Updates an existing type by its ID.  
 - DELETE /guy/{id} : Deletes a user by ID.  
   
-  
 GET /post  
 - GET /post/{id}  
 - POST /post  
 - PUT /post/{id}  
 - DELETE /post/{id}  
+
+## How to use the api
+
+### Creating a user :
+
+POST to https://instacrameapi-production.up.railway.app/api/guys :  
+
+```json
+{
+  "data": {
+    "username": "Jean-Robert",
+    "description": "Ça fait des commits"
+  }
+}
+```
+
 
 ## 🚀 Getting started with Strapi
 
