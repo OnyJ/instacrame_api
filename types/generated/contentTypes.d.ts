@@ -683,13 +683,14 @@ export interface ApiGuyGuy extends Schema.CollectionType {
     singularName: 'guy';
     pluralName: 'guys';
     displayName: 'Guy';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     username: Attribute.String;
-    profile_picture: Attribute.Media;
+    description: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

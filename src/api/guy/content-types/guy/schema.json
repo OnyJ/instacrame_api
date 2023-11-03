@@ -4,7 +4,8 @@
   "info": {
     "singularName": "guy",
     "pluralName": "guys",
-    "displayName": "Guy"
+    "displayName": "Guy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,15 +15,8 @@
     "username": {
       "type": "string"
     },
-    "profile_picture": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
+    "description": {
+      "type": "text"
     }
   }
 }
