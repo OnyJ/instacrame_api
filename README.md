@@ -4,15 +4,15 @@ This is an API to manage an instagram like app's users and posts.
 
 ## Endpoints
 
-GET /guy : Retrieves all guys.  
+GET /guy : Retrieves all guys (users).  
 - GET /guy/{id}: Retrieves a specific guy by his ID.  
-- POST /guy : Creates a new user.  
+- POST /guys : Creates a new user.  
 - PUT /guy/{id} : Updates an existing type by its ID.  
 - DELETE /guy/{id} : Deletes a user by ID.  
   
 GET /post  
 - GET /post/{id}  
-- POST /post  
+- POST /posts  
 - PUT /post/{id}  
 - DELETE /post/{id}  
 
@@ -26,11 +26,22 @@ POST to https://instacrameapi-production.up.railway.app/api/guys :
 {
   "data": {
     "username": "Jean-Robert",
-    "description": "Ça fait des commits"
+    "description": "I'm doing commits."
   }
 }
 ```
 
+### Creating a post :
+
+POST to https://instacrameapi-production.up.railway.app/api/posts :
+
+```json
+{
+  "data": {
+    "content": "Yoohoo, this is a post"
+  }
+}
+```
 
 ## 🚀 Getting started with Strapi
 
